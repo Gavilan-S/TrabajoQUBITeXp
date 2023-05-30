@@ -7,3 +7,14 @@
     list-style: none;
 }
 
+header > section
+{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+header > section > article:nth-child(2n) > ul
+{
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+}
