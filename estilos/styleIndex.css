@@ -122,3 +122,24 @@ main > section > article > button
     font-size: 18px;
     border-radius: 20px;
 }
+
+/*Frase de la empresa*/
+
+main > section:nth-child(2n)
+{
+    background-color: blue;
+    margin: 2.5% 0;
+}
+
+main > section:nth-child(2n) > article 
+{
+    padding: 3.5% 8%;
+}
+
+main > section:nth-child(2n) > article > p
+{
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
