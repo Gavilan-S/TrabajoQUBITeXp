@@ -70,3 +70,11 @@ header > section > nav > ul > li:hover > ul > li > a
     font-size: 15px;
     color: gray;
 }
+
+/*body*/
+
+main > section > article > img
+{
+    max-width: 100%;
+}
+
