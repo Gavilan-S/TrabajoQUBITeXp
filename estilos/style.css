@@ -100,6 +100,7 @@ main > section > article > ul > li
     margin: 0 2%;
     display: grid;
     grid-template-rows: 85% 15%;
+    font-size: 18px;
 }
 
 main > section > article > ul > li > img
@@ -107,8 +108,17 @@ main > section > article > ul > li > img
     width: 100%;
 }
 
-main > section > article > button
+main > section > article:nth-child(3n)
 {
     display: flex;
     justify-content: center;
+}
+
+main > section > article > button
+{
+    padding: 0.8% 2.5%;
+    color: #fff;
+    background-color: blue;
+    font-size: 18px;
+    border-radius: 20px;
 }
