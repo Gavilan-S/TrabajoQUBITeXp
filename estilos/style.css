@@ -1,0 +1,72 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    border: 1px dotted red;
+    text-decoration: none;
+    list-style: none;
+}
+
+header > section
+{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin: 1% 3%;
+}
+
+header > section > article > img
+{
+    height: 90px;
+    width: auto;
+}
+
+header > section > nav > ul
+{
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    height: 100%;
+}
+
+header > section > nav > ul > li
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header > section > nav > ul > li > a
+{
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+header > section > nav > ul > li > ul 
+{
+    display: none;
+}
+
+header > section > nav > ul > li > ul > li
+{
+    padding: 10px 7.2vh;
+}
+
+header > section > nav > ul > li:hover > a
+{
+    color: red;
+    transition: 0.8s;
+}
+
+header > section > nav > ul > li:hover > ul 
+{
+    display: block;
+    position: absolute;
+    top: 115px;
+    background-color: #fff;
+}
+
+header > section > nav > ul > li:hover > ul > li > a
+{
+    font-size: 15px;
+    color: gray;
+}
