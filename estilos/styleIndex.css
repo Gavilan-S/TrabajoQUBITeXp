@@ -241,8 +241,12 @@ footer > section:nth-child(2n)
     background-color: red;
 }
 
-footer > section:nth-child(2n) > article > p
+footer > section:nth-child(2n) > article > p , footer > section:nth-child(2n) > article > p > a
 {
     color: #fff;
-    margin-top: 3%;
+}
+
+footer > section:nth-child(2n) > article
+{
+    margin-top: 2.5%;
 }
