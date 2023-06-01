@@ -9,9 +9,9 @@
 
 p
 {
- font-size: 1.125em;
- line-height: 1.8em;
- font-weight: 400;
+    font-size: 1.125em;
+    line-height: 1.8em;
+    font-weight: 400;
 }
 
 /*header*/
@@ -19,16 +19,17 @@ p
 header > section
 {
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 25% 75%;
     margin: 0 3%;
 }
 
 header > section > article > img
 {
     height: auto;
-    width: 90%;
+    width: 85%;
     display: flex;
     align-items: center;
+    margin: 3% 0;
 }
 
 header > section > nav > ul
@@ -48,7 +49,7 @@ header > section > nav > ul > li
 header > section > nav > ul > li > a
 {
     color: #000;
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: 700;
     transition: 1s;
 }
@@ -133,9 +134,8 @@ main > section > article > hr
 main > section > article > ul > li
 {
     margin: 0 1.5%;
-    display: grid;
-    grid-template-rows: 80% 20%;
-    font-size: 18px;
+    font-size: 1.125em;
+    padding-bottom: 5%;
 }
 
 main > section > article > ul > li:hover
@@ -146,6 +146,7 @@ main > section > article > ul > li:hover
 main > section > article > ul > li > img
 {
     width: 100%;
+    margin-bottom: 5%;
 }
 
 main > section > article > ul > li > img:hover
@@ -163,17 +164,17 @@ main > section > article > button
 {
     padding: 0.5% 2.5%;
     color: #fff;
-    background-color: #c72924;
+    background-color: #991a15;
     font-size: 1.25em;
     border-radius: 20px;
-    border: #c72924 solid 3px;
+    border: #991a15 solid 3px;
     transition: 1s;
 }
 
 main > section > article > button:hover
 {
     background-color: #fff;
-    color: #c72924;
+    color: #991a15;
     transition: 0.5s;
 }
 
@@ -214,7 +215,7 @@ main > section:nth-child(3n) > article:nth-child(2n)
 main > section:nth-child(3n) > article:nth-child(2n) > img
 {
     height: auto;
-    width: 600px;
+    width: 40vw;
 }
 
 main > section:nth-child(3n) > article:nth-child(2n) > span > h3
@@ -223,11 +224,6 @@ main > section:nth-child(3n) > article:nth-child(2n) > span > h3
     font-weight: bold;
     margin: 5% 0;
     color: #7d8588;
-}
-
-main > section:nth-child(3n) > article:nth-child(2n) > span > p
-{
-
 }
 
 /*Footer*/
@@ -258,13 +254,27 @@ footer > section:first-child > article > h4
 {
     font-weight: lighter;
     margin-bottom: 15%;
+    transition: 0.8s;
+}
+
+footer > section:first-child > article > h4:hover
+{
+    font-weight: bold;
+    transition: 0.3s;
 }
 
 footer > section:first-child > article > ul > li > a
 {
     color: #fff;
     font-size: 0.938em;
+    transition: 0.8s;
 } 
+
+footer > section:first-child > article > ul > li > a:hover
+{
+    font-weight: bold;
+    transition: 0.3s;
+}
 
 footer > section:first-child > article > ul > li
 {
@@ -287,6 +297,7 @@ footer > section:nth-child(2n) > article > p
     color: #fff;
     font-size: 0.85em;
     margin: 1.5% 5%;
+    transition: 0.8s;
 }
 
 footer > section:nth-child(2n) > article > p > a
@@ -294,6 +305,12 @@ footer > section:nth-child(2n) > article > p > a
     color: #fff;
     font-size: 1em;
     margin: 1.5% 5%;
+}
+
+footer > section:nth-child(2n) > article > p > a:hover
+{
+    font-weight: bolder;
+    transition: 0.3s;
 }
 
 footer > section:nth-child(2n) > article > p:nth-child(2n)
