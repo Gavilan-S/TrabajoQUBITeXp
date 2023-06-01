@@ -23,8 +23,10 @@ header > section
 
 header > section > article > img
 {
-    height: 90px;
-    width: auto;
+    height: auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
 }
 
 header > section > nav > ul
@@ -44,8 +46,8 @@ header > section > nav > ul > li
 header > section > nav > ul > li > a
 {
     color: #000;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 header > section > nav > ul > li > ul 
