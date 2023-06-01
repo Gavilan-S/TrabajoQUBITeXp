@@ -150,7 +150,32 @@ main > section:nth-child(2n) > article > p
 
 /*Sobre QubiTeXp*/
 
-main > section:nth-child(3n) > article > p
+main > section:nth-child(3n) > article > p , main > section:nth-child(3n) > article:nth-child(2n)
 {
     margin: 0 3% 2.5% 3%;
+}
+
+main > section:nth-child(3n) > article:nth-child(2n)
+{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    background-color: gray;
+}
+
+main > section:nth-child(3n) > article:nth-child(2n) > img
+{
+    height: auto;
+    width: 600px;
+}
+
+main > section:nth-child(3n) > article:nth-child(2n) > span > h3
+{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 5% 0;
+}
+
+main > section:nth-child(3n) > article:nth-child(2n) > span > p
+{
+    
 }
