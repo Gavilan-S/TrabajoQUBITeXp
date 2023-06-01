@@ -7,6 +7,11 @@
     list-style: none;
 }
 
+p
+{
+ font-size: 18px;
+}
+
 header > section
 {
     display: grid;
@@ -100,7 +105,7 @@ main > section > article > ul > li
     margin: 0 2%;
     display: grid;
     grid-template-rows: 85% 15%;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 main > section > article > ul > li > img
@@ -119,7 +124,7 @@ main > section > article > button
     padding: 0.8% 2.5%;
     color: #fff;
     background-color: blue;
-    font-size: 18px;
+    font-size: 20px;
     border-radius: 20px;
 }
 
@@ -138,8 +143,14 @@ main > section:nth-child(2n) > article
 
 main > section:nth-child(2n) > article > p
 {
-    font-size: 20px;
     color: #fff;
     font-weight: bold;
     text-align: center;
+}
+
+/*Sobre QubiTeXp*/
+
+main > section:nth-child(3n) > article > p
+{
+    margin: 0 3% 2.5% 3%;
 }
