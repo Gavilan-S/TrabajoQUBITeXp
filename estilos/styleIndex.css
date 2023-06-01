@@ -2,17 +2,19 @@
 {
     margin: 0;
     padding: 0;
-    border: 1px dotted red;
     text-decoration: none;
     list-style: none;
     font-family: 'Raleway', sans-serif;
-
 }
 
 p
 {
- font-size: 18px;
+ font-size: 1.125em;
+ line-height: 1.8em;
+ font-weight: 400;
 }
+
+/*header*/
 
 header > section
 {
@@ -48,6 +50,7 @@ header > section > nav > ul > li > a
     color: #000;
     font-size: 1.2em;
     font-weight: 700;
+    transition: 1s;
 }
 
 header > section > nav > ul > li > ul 
@@ -57,12 +60,12 @@ header > section > nav > ul > li > ul
 
 header > section > nav > ul > li:nth-child(2n) > ul > li
 {
-    padding: 10px 2.9vw;
+    padding: 10px 2.7vw;
 }
 
 header > section > nav > ul > li:nth-child(3n) > ul > li
 {
-    padding: 10px 3.2vw;
+    padding: 10px 3vw;
 }
 
 header > section > nav > ul > li:hover > a
@@ -75,13 +78,13 @@ header > section > nav > ul > li:hover > ul
 {
     display: block;
     position: absolute;
-    top: 6.2vw;
+    top: 6vw;
     background-color: #fff;
 }
 
 header > section > nav > ul > li:hover > ul > li > a
 {
-    font-size: 15px;
+    font-size: 1em;
     color: #7d8588;
 }
 
@@ -97,10 +100,10 @@ header > section > nav > ul > li > ul > li:hover > a
 
 /*body*/
 
-main > section > article > img
+main > section:first-child > article > img
 {
     width: 100%;
-    height: 80vh;
+    height: 70vh;
 }
 
 main > section > article > ul
@@ -114,22 +117,40 @@ main > section > article > h2
 {
     display: flex;
     justify-content: center;
-    font-size: 30px;
+    font-size: 1.875em;
     text-transform: uppercase;
-    margin: 2.5% 0;
+    margin: 2.5% 0 0 0;
+    color: #7d8588;
+}
+
+main > section > article > hr
+{
+    margin: 1% 47% 2.5% 47%;
+    border: 3px solid #c72924;
+    border-radius: 10px;
 }
 
 main > section > article > ul > li
 {
-    margin: 0 2%;
+    margin: 0 1.5%;
     display: grid;
-    grid-template-rows: 85% 15%;
-    font-size: 20px;
+    grid-template-rows: 80% 20%;
+    font-size: 18px;
+}
+
+main > section > article > ul > li:hover
+{
+    border-bottom: #c72924 solid 2px;
 }
 
 main > section > article > ul > li > img
 {
     width: 100%;
+}
+
+main > section > article > ul > li > img:hover
+{
+    filter: opacity(60%);
 }
 
 main > section > article:nth-child(3n)
@@ -140,24 +161,33 @@ main > section > article:nth-child(3n)
 
 main > section > article > button
 {
-    padding: 0.8% 2.5%;
+    padding: 0.5% 2.5%;
     color: #fff;
-    background-color: blue;
-    font-size: 20px;
+    background-color: #c72924;
+    font-size: 1.25em;
     border-radius: 20px;
+    border: #c72924 solid 3px;
+    transition: 1s;
+}
+
+main > section > article > button:hover
+{
+    background-color: #fff;
+    color: #c72924;
+    transition: 0.5s;
 }
 
 /*Frase de la empresa*/
 
 main > section:nth-child(2n)
 {
-    background-color: blue;
-    margin: 2.5% 0;
+    background-image: url("/img/fondoFraseQubiteXp.png");
+    margin: 5% 0 0 0;
 }
 
 main > section:nth-child(2n) > article 
 {
-    padding: 3.5% 8%;
+    padding: 3.5% 5%;
 }
 
 main > section:nth-child(2n) > article > p
@@ -178,7 +208,7 @@ main > section:nth-child(3n) > article:nth-child(2n)
 {
     display: grid;
     grid-template-columns: repeat(2, 50%);
-    background-color: gray;
+    background-color: #fafafa;
 }
 
 main > section:nth-child(3n) > article:nth-child(2n) > img
@@ -189,9 +219,10 @@ main > section:nth-child(3n) > article:nth-child(2n) > img
 
 main > section:nth-child(3n) > article:nth-child(2n) > span > h3
 {
-    font-size: 25px;
+    font-size: 1.563em;
     font-weight: bold;
     margin: 5% 0;
+    color: #7d8588;
 }
 
 main > section:nth-child(3n) > article:nth-child(2n) > span > p
@@ -203,69 +234,71 @@ main > section:nth-child(3n) > article:nth-child(2n) > span > p
 
 footer
 {
-    background-color: tomato;
+    background-image: url("/img/fondoFraseQubiteXp.png");
 }
 
-footer > section:first-child
+footer > section:first-child 
 {
     display: grid;
-    grid-template-columns: repeat(3, 15%) 55%;
-    margin: 2.5% 3%;
+    grid-template-columns: repeat(4, 25%);
 }
 
-footer > section:first-child > article:nth-child(4n) 
+footer > section:first-child > article
 {
-    display: flex;
-    justify-content: flex-end;
-}
-
-footer > section:first-child > article:nth-child(4n) > img
-{
-    width: auto;
-    height: 80%;
+    margin: 5% 15%;
 }
 
 footer > section:first-child > article > h4 > a
 {
-    font-size: 18px;
+    font-size: 1.125em;
     color: #fff;
 }
 
 footer > section:first-child > article > h4 
 {
-    margin-bottom: 15%;
     font-weight: lighter;
+    margin-bottom: 15%;
 }
 
 footer > section:first-child > article > ul > li > a
 {
     color: #fff;
-    font-size: 15px;
+    font-size: 0.938em;
 } 
 
 footer > section:first-child > article > ul > li
 {
-    margin-bottom: 2%;
+    margin-bottom: 3%;
 }
 
 footer > section:nth-child(2n) > article
 {
     display: grid;
     grid-template-columns: 70% 30%;
-    margin: 0 3% 2.5% 3%;
 }
 
 footer > section:nth-child(2n)
 {
-    background-color: red;
+    background-color: #991a15;
 }
 
-footer > section:nth-child(2n) > article > p , footer > section:nth-child(2n) > article > p > a
+footer > section:nth-child(2n) > article > p 
 {
     color: #fff;
+    font-size: 0.85em;
+    margin: 1.5% 5%;
 }
 
-footer > section:nth-child(2n) > article
+footer > section:nth-child(2n) > article > p > a
 {
-    margin-top: 2.5%;
+    color: #fff;
+    font-size: 1em;
+    margin: 1.5% 5%;
 }
+
+footer > section:nth-child(2n) > article > p:nth-child(2n)
+{
+    display: flex;
+    justify-content: flex-end;
+}
+
