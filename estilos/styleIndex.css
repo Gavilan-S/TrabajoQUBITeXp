@@ -177,5 +177,18 @@ main > section:nth-child(3n) > article:nth-child(2n) > span > h3
 
 main > section:nth-child(3n) > article:nth-child(2n) > span > p
 {
-    
+
+}
+
+/*Footer*/
+
+footer
+{
+    background-color: tomato;
+}
+
+footer > section 
+{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 40%;
 }
