@@ -101,136 +101,177 @@ header > section > nav > ul > li > ul > li:hover > a
 
 /*body*/
 
-main > section:first-child > article > img
+main > section:first-child > article:first-child
 {
     width: 100%;
     height: 70vh;
-}
-
-main > section > article > ul
-{
-    display: grid;
-    grid-template-columns: repeat(4, 25%);
-    margin: 0 3% 2.5% 3%;
-}
-
-main > section > article > h2
-{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("/img/productsImg.JPG");
     display: flex;
     justify-content: center;
+    align-items: center;
+    color: #fff;
     font-size: 1.875em;
-    text-transform: uppercase;
-    margin: 2.5% 0 0 0;
+}
+
+main > section:first-child > article:nth-child(2)
+{
+    background-color: #F5F7FA;
+    font-size: 1em;;
+    padding: 0.5% 3.8%;
+}
+
+main > section:first-child > article:nth-child(2) > p > a, 
+main > section:first-child > article:nth-child(2) > p
+{
     color: #7d8588;
 }
 
-main > section > article > hr
+main > section:first-child > article:nth-child(2) > p > a:hover
 {
-    margin: 1% 47% 2.5% 47%;
-    border: 3px solid #c72924;
-    border-radius: 10px;
+    color: #c72924;
 }
 
-main > section > article > ul > a
+/*Seccion de Productos*/
+
+main > section:nth-child(2)
+{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    margin: 2.5% 8%;
+}
+
+main > section:nth-child(2) > article:first-child
+{
+    margin-right: 2.5%;
+}
+
+main > section:nth-child(2) > article:nth-child(2)
+{
+    display: grid;
+    grid-template-rows: 24% 76%;
+    margin-left: 2.5%;
+    padding: 5%;
+}
+
+main > section:nth-child(2) > article:nth-child(2) > article:nth-child(2) > ul
+{
+    display: grid;
+    grid-template-columns: repeat(3, 33.3333333333333%);
+    grid-template-rows: repeat(3, 33.3333333333333%);
+}
+
+main > section:nth-child(2) > article:nth-child(2) > article:first-child
+{
+    background-color: #F5F7FA;
+    padding: 3% 5%;
+    margin: 0 0 3% 0;
+}
+
+main > section:nth-child(2) > article:nth-child(2) > article:first-child > h4
+{
+    font-size: 1.563em;
+    margin: 0 0 0.8% 0;
+    color: #7d8588;
+}
+
+main > section:nth-child(2) > article:nth-child(2) > article:first-child > p
+{
+    font-size: 1em;
+}
+
+main > section:nth-child(2) > article:nth-child(2) > article > ul > a
 {
     color: #000;
 }
 
-main > section > article > ul > a > li
+main > section:nth-child(2) > article:nth-child(2) > article > ul > a > li
 {
-    margin: 0 1.5%;
+    margin: 1.5%;
     font-size: 1.125em;
     padding-bottom: 5%;
 }
 
-main > section > article > ul > a > li:hover
+main > section:nth-child(2) > article:nth-child(2) > article > ul > a > li:hover
 {
     border-bottom: #c72924 solid 2px;
 }
 
-main > section > article > ul > a > li > img
+main > section:nth-child(2) > article:nth-child(2) > article > ul > a > li > img
 {
     width: 100%;
     margin-bottom: 5%;
 }
 
-main > section > article > ul > a > li > img:hover
+main > section:nth-child(2) > article:nth-child(2) > article > ul > a > li > img:hover
 {
     filter: opacity(60%);
 }
 
-main > section > article:nth-child(3)
+/*Mensaje*/
+
+main > section:nth-child(3) > article
 {
-    display: flex;
-    justify-content: center;
+    background-color: #F5F7FA;
+    margin: 0 8% 3.5% 8%;
+    padding: 2% 5%;
 }
 
-main > section > article > button
+main > section:nth-child(3) > article > h4
 {
-    padding: 0.5% 2.5%;
-    color: #fff;
-    background-color: #991a15;
-    font-size: 1.25em;
-    border-radius: 20px;
-    border: #991a15 solid 3px;
-    transition: 1s;
-}
-
-main > section > article > button:hover
-{
-    background-color: #fff;
     color: #991a15;
-    transition: 0.5s;
+    margin-bottom: 1.5%;
+    text-justify: center;
+    font-size: 1.1em;
 }
 
-/*Frase de la empresa*/
-
-main > section:nth-child(2)
-{
-    background-image: url("/img/fondoFraseQubiteXp.png");
-    margin: 5% 0 0 0;
-}
-
-main > section:nth-child(2) > article 
-{
-    padding: 3.5% 5%;
-}
-
-main > section:nth-child(2) > article > p
-{
-    color: #fff;
-    font-weight: bold;
-    text-align: center;
-}
-
-/*Sobre QubiTeXp*/
-
-main > section:nth-child(3) > article > p ,
-main > section:nth-child(3) > article:nth-child(2)
-{
-    margin: 0 3% 2.5% 3%;
-}
-
-main > section:nth-child(3) > article:nth-child(2)
+main > section:nth-child(3) > article > form
 {
     display: grid;
-    grid-template-columns: repeat(2, 50%);
-    background-color: #fafafa;
+    grid-template-columns: 25% 25% 30% 20%;
+}
+main > section:nth-child(3) > article > form > input:first-child,
+main > section:nth-child(3) > article > form > input:nth-child(2)
+{
+    width: 15vw;
+    height: 44px;
+    text-indent: 1vw;
+    border: solid 0.5px #991a15;
+    outline: none;
+    border-radius: 4px;
 }
 
-main > section:nth-child(3) > article:nth-child(2) > img
+::placeholder
 {
-    height: auto;
-    width: 40vw;
+    color: #991a15;
 }
 
-main > section:nth-child(3) > article:nth-child(2) > span > h3
+main > section:nth-child(3) > article > form > textarea
 {
-    font-size: 1.563em;
-    font-weight: bold;
-    margin: 5% 0;
-    color: #7d8588;
+    width: 20vw;
+    height: 45.5px;
+    resize: none;
+    line-height: 45px;
+    text-indent: 1vw;
+    border: solid 0.5px #991a15;
+    outline: none;
+    border-radius: 4px;
 }
+
+main > section:nth-child(3) > article > form > textarea:focus
+{
+    line-height: 30px;
+}
+
+main > section:nth-child(3) > article > form > input:nth-child(4)
+{
+    width: 16.5vw;
+    background-color: #991a15;
+    color: #fff;
+    border: #fff solid 0.5px;
+    border-radius: 4px;
+    outline: none;
+}
+
 
 /*Footer*/
 
@@ -243,11 +284,12 @@ footer > section:first-child
 {
     display: grid;
     grid-template-columns: repeat(4, 25%);
+    margin: 0 8%;
 }
 
 footer > section:first-child > article
 {
-    margin: 5% 12.5%;
+    margin: 5% 0%;
 }
 
 footer > section:first-child > article > h4 > a
@@ -291,7 +333,7 @@ footer > section:nth-child(2n) > article
 {
     display: grid;
     grid-template-columns: 70% 30%;
-    padding: 1% 3%;
+    padding: 1% 7.5%;
 }
 
 footer > section:nth-child(2n)
