@@ -23,7 +23,7 @@ header > section
     margin: 0 3%;
 }
 
-header > section > article > img
+header > section > article > a > img
 {
     height: auto;
     width: 85%;
