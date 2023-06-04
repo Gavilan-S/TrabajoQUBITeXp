@@ -117,7 +117,7 @@ main > section:first-child > article:nth-child(2)
 {
     background-color: #F5F7FA;
     font-size: 1em;;
-    padding: 0.5% 3.8%;
+    padding: 0.5% 7.9%;
 }
 
 main > section:first-child > article:nth-child(2) > p > a, 
@@ -129,6 +129,101 @@ main > section:first-child > article:nth-child(2) > p
 main > section:first-child > article:nth-child(2) > p > a:hover
 {
     color: #c72924;
+}
+
+/*Contacto*/
+
+main > section:nth-child(2)
+{
+    display: grid;
+    grid-template-columns: repeat(3, 33.3333333333333%);
+    margin: 2.5% 5.9%;
+    justify-items: center;
+}
+
+main > section:nth-child(2) > article
+{
+    width: 25vw;
+    height: 12.5vw;
+    background-color: #F5F7FA;
+    text-align: center;
+}
+
+main > section:nth-child(2) > article > h4
+{
+    margin: 6% 5%;
+    font-size: 1.125em;
+}
+
+main > section:nth-child(2) > article > p
+{
+    margin: 0 5%;
+}
+
+main > section:nth-child(2) > article > iframe
+{
+    width: 25vw;
+    height: 12.5vw;
+}
+
+/*Productos Que Puedas Necesitar*/
+
+main > section:nth-child(3) 
+{
+    display: grid;
+    grid-template-rows: 10% 90%;
+    margin: 0 6.9% 2.5% 6.9%;
+}
+
+main > section:nth-child(3) > article:first-child
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1%;
+}
+
+main > section:nth-child(3) > article:first-child > a
+{
+    color: #000;
+}
+
+main > section:nth-child(3) > article:first-child > a:hover
+{
+    color: #991a15;
+}
+
+main > section:nth-child(3) > article:nth-child(2) > ul
+{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+}
+
+main > section:nth-child(3) > article:nth-child(2) > ul > a
+{
+    color: #000;
+}
+
+main > section:nth-child(3) > article:nth-child(2) > ul > a > li
+{
+    margin: 4.4%;
+    font-size: 1.125em;
+    padding-bottom: 5%;
+}
+
+main > section:nth-child(3) > article:nth-child(2) > ul > a > li:hover
+{
+    border-bottom: #c72924 solid 2px;
+}
+
+main > section:nth-child(3) > article:nth-child(2) > ul > a > li img
+{
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+main > section:nth-child(3) > article:nth-child(2) > ul > a > li img:hover
+{
+    filter: opacity(60%);
 }
 
 /*Footer*/
