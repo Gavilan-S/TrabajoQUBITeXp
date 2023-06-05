@@ -337,6 +337,8 @@ footer > section:first-child > article > ul > li > a:hover
 footer > section:first-child > article > ul > li
 {
     margin-bottom: 3%;
+    color: #fff;
+    font-size: 0.938em;
 }
 
 footer > section:nth-child(2n) > article
