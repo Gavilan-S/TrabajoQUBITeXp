@@ -71,7 +71,7 @@ header > section > nav > ul > li:nth-child(3) > ul > li
 
 header > section > nav > ul > li:hover > a
 {
-    color: #c72924;
+    color: #991a15;
     transition: 0.3s;
 }
 
@@ -97,6 +97,27 @@ header > section > nav > ul > li > ul > li:hover
 header > section > nav > ul > li > ul > li:hover > a
 {
     color: #000;
+}
+
+header > section > nav > ul > li > a > img:first-child
+{
+    width: 12.5px;
+}
+
+header > section > nav > ul > li:hover > a > img:first-child
+{
+    display: none;
+}
+
+header > section > nav > ul > li > a > img:nth-child(2)
+{
+    display: none;
+    width: 12.5px;
+}
+
+header > section > nav > ul > li:hover > a > img:nth-child(2)
+{
+    display: inline;
 }
 
 /*body*/
@@ -128,7 +149,7 @@ main > section:first-child > article:nth-child(2) > p
 
 main > section:first-child > article:nth-child(2) > p > a:hover
 {
-    color: #c72924;
+    color: #991a15;
 }
 
 /*Seccion de Productos*/
@@ -176,6 +197,7 @@ main > section:nth-child(2) > article:nth-child(2) > article:first-child > h4
 main > section:nth-child(2) > article:nth-child(2) > article:first-child > p
 {
     font-size: 1em;
+    text-align: justify;
 }
 
 main > section:nth-child(2) > article:nth-child(2) > article > ul > a
@@ -192,7 +214,7 @@ main > section:nth-child(2) > article:nth-child(2) > article > ul > a > li
 
 main > section:nth-child(2) > article:nth-child(2) > article > ul > a > li:hover
 {
-    border-bottom: #c72924 solid 2px;
+    border-bottom: #991a15 solid 2px;
 }
 
 main > section:nth-child(2) > article:nth-child(2) > article > ul > a > li > img

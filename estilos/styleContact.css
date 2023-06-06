@@ -71,7 +71,7 @@ header > section > nav > ul > li:nth-child(3) > ul > li
 
 header > section > nav > ul > li:hover > a
 {
-    color: #c72924;
+    color: #991a15;
     transition: 0.3s;
 }
 
@@ -97,6 +97,27 @@ header > section > nav > ul > li > ul > li:hover
 header > section > nav > ul > li > ul > li:hover > a
 {
     color: #000;
+}
+
+header > section > nav > ul > li > a > img:first-child
+{
+    width: 12.5px;
+}
+
+header > section > nav > ul > li:hover > a > img:first-child
+{
+    display: none;
+}
+
+header > section > nav > ul > li > a > img:nth-child(2)
+{
+    display: none;
+    width: 12.5px;
+}
+
+header > section > nav > ul > li:hover > a > img:nth-child(2)
+{
+    display: inline;
 }
 
 /*body*/
@@ -128,7 +149,7 @@ main > section:first-child > article:nth-child(2) > p
 
 main > section:first-child > article:nth-child(2) > p > a:hover
 {
-    color: #c72924;
+    color: #991a15;
 }
 
 /*Contacto*/
@@ -304,7 +325,7 @@ main > section:nth-child(4) > article:nth-child(2) > ul > a > li
 
 main > section:nth-child(4) > article:nth-child(2) > ul > a > li:hover
 {
-    border-bottom: #c72924 solid 2px;
+    border-bottom: #991a15 solid 2px;
 }
 
 main > section:nth-child(4) > article:nth-child(2) > ul > a > li img
