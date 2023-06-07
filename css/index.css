@@ -207,7 +207,7 @@ main > section:first-child > article > a > button:hover
 
 main > section:nth-child(2)
 {
-    background-image: url("/img/logos/fondo-qubitexp.png");
+    background-image: url("img/logos/fondo-qubitexp.png");
     margin: 3% 0 0 0;
 }
 

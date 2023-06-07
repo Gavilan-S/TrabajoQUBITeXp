@@ -202,11 +202,6 @@ main > section:nth-child(3) > article > h2
     margin-bottom: 1.5%;
 }
 
-main > section:nth-child(3) > article > h2 > span
-{
-    color: #1249a3;
-}
-
 main > section:nth-child(3) > article > form
 {
     display: grid;
@@ -226,20 +221,13 @@ main > section:nth-child(3) > article > form > input:nth-child(3)
     border-radius: 4px;
 }
 
-main > section:nth-child(3) > article > form > input:first-child:focus
-{
-    border: #991a15 solid 1px;
-}
-
-main > section:nth-child(3) > article > form > input:nth-child(2):focus
-{
-    border: #991a15 solid 1px;
-}
-
+main > section:nth-child(3) > article > form > input:first-child:focus,
+main > section:nth-child(3) > article > form > input:nth-child(2):focus,
 main > section:nth-child(3) > article > form > input:nth-child(3):focus
 {
     border: #991a15 solid 1px;
 }
+
 
 ::placeholder
 {
