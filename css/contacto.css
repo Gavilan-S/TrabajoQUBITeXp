@@ -1,0 +1,425 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+p
+{
+    font-size: 1.125em;
+    line-height: 1.8em;
+    font-weight: 400;
+}
+
+/*header*/
+
+header > section
+{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    margin: 0 3%;
+}
+
+header > section > article > a > img
+{
+    height: auto;
+    width: 85%;
+    display: flex;
+    align-items: center;
+    margin: 3% 0;
+}
+
+header > section > nav > ul
+{
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    height: 100%;
+}
+
+header > section > nav > ul > li
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header > section > nav > ul > li > a
+{
+    color: #000;
+    font-size: 1.1em;
+    font-weight: 700;
+    transition: 1s;
+}
+
+header > section > nav > ul > li > ul 
+{
+    display: none;
+}
+
+header > section > nav > ul > li:nth-child(2) > ul > li
+{
+    padding: 10px 2.7vw;
+}
+
+header > section > nav > ul > li:nth-child(3) > ul > li
+{
+    padding: 10px 3vw;
+}
+
+header > section > nav > ul > li:hover > a
+{
+    color: #991a15;
+    transition: 0.3s;
+}
+
+header > section > nav > ul > li:hover > ul 
+{
+    display: block;
+    position: absolute;
+    top: 6vw;
+    background-color: #fff;
+}
+
+header > section > nav > ul > li:hover > ul > li > a
+{
+    font-size: 1em;
+    color: #7d8588;
+}
+
+header > section > nav > ul > li > ul > li:hover
+{
+    background-color: #eeeeee;
+}
+
+header > section > nav > ul > li > ul > li:hover > a
+{
+    color: #000;
+}
+
+header > section > nav > ul > li > a > img:first-child
+{
+    width: 12.5px;
+}
+
+header > section > nav > ul > li:hover > a > img:first-child
+{
+    display: none;
+}
+
+header > section > nav > ul > li > a > img:nth-child(2)
+{
+    display: none;
+    width: 12.5px;
+}
+
+header > section > nav > ul > li:hover > a > img:nth-child(2)
+{
+    display: inline;
+}
+
+/*body*/
+
+main > section:first-child > article:first-child
+{
+    width: 100%;
+    height: 70vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/img/inicial/contacto-inicial.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1.875em;
+}
+
+main > section:first-child > article:nth-child(2)
+{
+    background-color: #F5F7FA;
+    font-size: 1em;;
+    padding: 0.5% 7.9%;
+}
+
+main > section:first-child > article:nth-child(2) > p > a, 
+main > section:first-child > article:nth-child(2) > p
+{
+    color: #7d8588;
+}
+
+main > section:first-child > article:nth-child(2) > p > a:hover
+{
+    color: #991a15;
+}
+
+/*Contacto*/
+
+main > section:nth-child(2)
+{
+    display: grid;
+    grid-template-columns: repeat(3, 33.3333333333333%);
+    margin: 2.5% 5.9%;
+    justify-items: center;
+}
+
+main > section:nth-child(2) > article
+{
+    width: 25vw;
+    height: 12.5vw;
+    background-color: #F5F7FA;
+    text-align: center;
+}
+
+main > section:nth-child(2) > article > h4
+{
+    margin: 6% 5%;
+    font-size: 1.125em;
+}
+
+main > section:nth-child(2) > article > p
+{
+    margin: 0 5%;
+}
+
+main > section:nth-child(2) > article > iframe
+{
+    width: 25vw;
+    height: 12.5vw;
+}
+
+/*Preguntas area*/
+
+main > section:nth-child(3)
+{
+    margin: 2.5% 8%;
+    background-color: #F5F7FA;
+    padding: 2% 5%;
+}
+
+main > section:nth-child(3) > article > h2
+{
+    color: #991a15;
+    margin-bottom: 1.5%;
+}
+
+main > section:nth-child(3) > article > form
+{
+    display: grid;
+    grid-template-columns: repeat(3, 33.3333333333333%);
+}
+
+main > section:nth-child(3) > article > form > input:first-child,
+main > section:nth-child(3) > article > form > input:nth-child(2),
+main > section:nth-child(3) > article > form > input:nth-child(3)
+{
+    width: 22.5vw;
+    height: 3vh;
+    margin-bottom: 5%;
+    text-indent: 1vw;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+}
+
+main > section:nth-child(3) > article > form > input:first-child:focus,
+main > section:nth-child(3) > article > form > input:nth-child(2):focus,
+main > section:nth-child(3) > article > form > input:nth-child(3):focus
+{
+    border: #991a15 solid 1px;
+}
+
+
+::placeholder
+{
+    color: #991a15;
+}
+
+main > section:nth-child(3) > article > form > textarea
+{
+    width: 71.4vw;
+    grid-column: 1 / 4;
+    resize: none;
+    text-indent: 1vw;
+    outline: none;
+    border: none;
+    line-height: 45px;
+    border-radius: 4px;
+    height: 12.5vh;
+}
+
+main > section:nth-child(3) > article > form > textarea:focus
+{
+    line-height: 30px;
+    border: solid 0.5px #991a15;
+    height: 12.5vh;
+}
+
+main > section:nth-child(3) > article > form > input:nth-child(5)
+{
+    width: 11.25vw;
+    height: 3vh;
+    background-color: #991a15;
+    color: #fff;
+    outline: none;
+    border: none;
+    margin-top: 5%;
+    border-radius: 4px;
+}
+
+
+/*Productos Que Puedas Necesitar*/
+
+main > section:nth-child(4) 
+{
+    display: grid;
+    grid-template-rows: 10% 90%;
+    margin: 0 6.9% 2.5% 6.9%;
+}
+
+main > section:nth-child(4) > article:first-child
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1%;
+}
+
+main > section:nth-child(4) > article:first-child > a
+{
+    color: #000;
+}
+
+main > section:nth-child(4) > article:first-child > a:hover
+{
+    color: #991a15;
+}
+
+main > section:nth-child(4) > article:nth-child(2) > ul
+{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+}
+
+main > section:nth-child(4) > article:nth-child(2) > ul > a
+{
+    color: #000;
+}
+
+main > section:nth-child(4) > article:nth-child(2) > ul > a > li
+{
+    margin: 4.4%;
+    font-size: 1.125em;
+    padding-bottom: 5%;
+}
+
+main > section:nth-child(4) > article:nth-child(2) > ul > a > li:hover
+{
+    border-bottom: #991a15 solid 2px;
+}
+
+main > section:nth-child(4) > article:nth-child(2) > ul > a > li img
+{
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+main > section:nth-child(4) > article:nth-child(2) > ul > a > li img:hover
+{
+    filter: opacity(60%);
+}
+
+/*Footer*/
+
+footer
+{
+    background-image: url("/img/logos/fondo-qubitexp.png");
+}
+
+footer > section:first-child 
+{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    margin: 0 8%;
+}
+
+footer > section:first-child > article
+{
+    margin: 5% 0%;
+}
+
+footer > section:first-child > article > h4 > a
+{
+    font-size: 1.125em;
+    color: #fff;
+}
+
+footer > section:first-child > article > h4 
+{
+    font-weight: lighter;
+    margin-bottom: 15%;
+    transition: 0.8s;
+}
+
+footer > section:first-child > article > h4:hover
+{
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+footer > section:first-child > article > ul > li > a
+{
+    color: #fff;
+    font-size: 0.938em;
+    transition: 0.8s;
+} 
+
+footer > section:first-child > article > ul > li > a:hover
+{
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+footer > section:first-child > article > ul > li
+{
+    margin-bottom: 3%;
+    color: #fff;
+    font-size: 0.938em;
+}
+
+footer > section:nth-child(2n) > article
+{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    padding: 1% 7.5%;
+}
+
+footer > section:nth-child(2n)
+{
+    background-color: #991a15;
+}
+
+footer > section:nth-child(2n) > article > p 
+{
+    color: #fff;
+    font-size: 0.85em;
+    transition: 0.8s;
+}
+
+footer > section:nth-child(2n) > article > p > a
+{
+    color: #fff;
+    font-size: 1em;
+    margin: 0 10px;
+}
+
+footer > section:nth-child(2n) > article > p > a:hover
+{
+    font-weight: bolder;
+    transition: 0.3s;
+}
+
+footer > section:nth-child(2n) > article > p:nth-child(2n)
+{
+    display: flex;
+    justify-content: flex-end;
+}
+
