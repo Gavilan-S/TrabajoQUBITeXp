@@ -207,8 +207,8 @@ main > section:first-child > article > a > button:hover
 
 main > section:nth-child(2)
 {
-    background-image: url("/img/fondoFraseQubiteXp.png");
-    margin: 5% 0 0 0;
+    background-image: url("/img/logos/fondo-qubitexp.png");
+    margin: 3% 0 0 0;
 }
 
 main > section:nth-child(2) > article 
@@ -304,7 +304,7 @@ main > section:nth-child(4) > article:nth-child(2) > ul > a:hover > li > img
 
 footer
 {
-    background-image: url("/img/fondoFraseQubiteXp.png");
+    background-image: url("/img/logos/fondo-qubitexp.png");
 }
 
 footer > section:first-child 

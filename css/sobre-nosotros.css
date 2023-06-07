@@ -126,7 +126,7 @@ main > section:first-child > article:first-child
 {
     width: 100%;
     height: 70vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/img/aboutImg.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/img/inicial/sobre-nosotros-inicial.jpg");
     display: flex;
     justify-content: center;
     align-items: center;
@@ -325,7 +325,7 @@ main > section:nth-child(4) > article:nth-child(2) > ul > a > li img:hover
 
 footer
 {
-    background-image: url("/img/fondoFraseQubiteXp.png");
+    background-image: url("/img/logos/fondo-qubitexp.png");
 }
 
 footer > section:first-child 
