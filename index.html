@@ -15,11 +15,16 @@
 </head>
 <body>
     <header>
-        <section>
+        <section class="sticky">
             <article>
                 <a href="index.html"><img src="img/logos/qubitexp-logo-sin-fondo.png" alt=""></a>
             </article>
-            <nav>
+            <article class="responsive">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </article>
+            <nav class="nav-bar">
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="productos.html">Productos <img src="img/logos/flecha-negra-logo.png" alt=""> <img src="img/logos/flecha-roja-logo.png" alt=""></a>
@@ -43,6 +48,14 @@
             </nav>
         </section>
     </header>
+    <script>
+        responsive = document.querySelector(".responsive");
+        responsive.onclick = function() 
+        {
+            nav = document.querySelector(".nav-bar");
+            nav.classList.toggle("active");
+        }
+    </script>
     <main>
         <section>
             <article>
@@ -94,10 +107,11 @@
                             <img src="img/otros/investigacion-uno.JPG" alt="">
                             <p><span>Beynor Antonio Páez Sierra</span>
                                 <br>
-                                May 2019, Pages 109-114
+                                May 2019
                             </p>
                         </li>
                     </a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptatibus adipisci facilis totam, enim eius at aspernatur, similique commodi aperiam ipsa expedita quasi voluptate quos maiores! Reprehenderit quae quidem ipsam.</p>
                     <a href="https://scholar.google.com.co/scholar?q=Luminescence+Tuning+of+MEH-PPV+for+Organic+Electronic+Applications&hl=es&as_sdt=0&as_vis=1&oi=scholart" target="_blank">
                         <li>
                             <img src="img/otros/investigacion-dos.JPG" alt="">
@@ -107,6 +121,7 @@
                             </p>
                         </li>
                     </a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptatibus adipisci facilis totam, enim eius at aspernatur, similique commodi aperiam ipsa expedita quasi voluptate quos maiores! Reprehenderit quae quidem ipsam.</p>
                     <a href="https://iopscience.iop.org/article/10.1088/1361-6463/abc380/meta" target="_blank">
                         <li>
                             <img src="img/otros/investigacion-tres.JPG" alt="">
@@ -116,6 +131,7 @@
                             </p>
                         </li>
                     </a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptatibus adipisci facilis totam, enim eius at aspernatur, similique commodi aperiam ipsa expedita quasi voluptate quos maiores! Reprehenderit quae quidem ipsam.</p>
                     <a href="https://www.researchgate.net/publication/325839434_Nanofotonica_en_el_analisis_de_biocombustibles" target="_blank">
                         <li>
                             <img src="img/otros/investigacion-cuatro.JPG" alt="">
@@ -125,6 +141,7 @@
                             </p>
                         </li>
                     </a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptatibus adipisci facilis totam, enim eius at aspernatur, similique commodi aperiam ipsa expedita quasi voluptate quos maiores! Reprehenderit quae quidem ipsam.</p>
                 </ul>
             </article>
         </section>
@@ -167,6 +184,11 @@
                     <li>Dirección: <a href="https://www.google.com/maps/place/Edificio+Avante/@4.725932,-74.0345964,17z/data=!3m1!4b1!4m6!3m5!1s0x8e3f856070c3be93:0x2ec47760552c64eb!8m2!3d4.7259267!4d-74.0320215!16s%2Fg%2F11c5zx9ldp?hl=es&entry=ttu" target="_blank">Ak. 9 #147-46</a></li>
                     <li>Bogotá, Colombia</li>
                 </ul>
+            </article>
+        </section>
+        <section>
+            <article>
+                <img src="img/logos/qubitexp-logo-fondo.png" alt="">
             </article>
         </section>
         <section>

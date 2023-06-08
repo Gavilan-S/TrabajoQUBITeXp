@@ -16,6 +16,11 @@ p
 
 /*header*/
 
+header > section > article.responsive
+{
+    display: none;
+}
+
 header > section
 {
     display: grid;
@@ -119,6 +124,98 @@ header > section > nav > ul > li:hover > a > img:nth-child(2)
     display: inline;
 }
 
+@media only screen and (max-width: 990px)
+{
+    header > section > nav > ul > li > a > img:first-child
+    {
+        display: none;
+    }
+    
+    header > section > nav > ul > li > a > img:nth-child(2),
+    header > section > nav > ul > li:hover > a > img:nth-child(2)
+    {
+        display: none;
+    }
+
+    header > section > nav > ul > li:hover > ul 
+    {
+        display: none;
+    }
+
+    header > section
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 8%;
+    }
+
+    header > section > article > a > img
+    {
+        width: 70%;
+    }
+
+    header > section > article.responsive
+    {
+        display: block;
+        cursor: pointer;
+    }
+
+    header > section > article.responsive > div.line
+    {
+        width: 30px;
+        height: 3px;
+        background: #991a15;
+        margin: 6px 0;
+    }
+
+    header > section > nav
+    {
+        height: 0;
+        position: absolute;
+        top: 90px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: #fff;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+
+    header > section > nav.active
+    {
+        height: 410px;
+        transition: 0.5s;
+    }
+
+    header > section > nav.active > ul
+    {
+        opacity: 1;
+        transition: 0.5s;
+    }
+
+    header > section > nav > ul
+    {
+        grid-template-columns: none;
+        display: block;
+        width: fit-content;
+        margin: 5% auto 0 auto;
+        opacity: 0;
+        transition: 0.5s;
+    }
+
+    header > section > nav > ul > li > a
+    {
+        margin-bottom: 15%;
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 767px)
+{
+    
+}
+
 /*body*/
 
 main > section:first-child > article > img
@@ -193,7 +290,7 @@ main > section:first-child > article > a > button
     border-radius: 20px;
     border: #991a15 solid 3px;
     transition: 1s;
-    width: 20vw;
+    width: 19.5vw;
 }
 
 main > section:first-child > article > a > button:hover
@@ -203,11 +300,32 @@ main > section:first-child > article > a > button:hover
     transition: 0.5s;
 }
 
+@media only screen and (max-width: 990px)
+{
+    main > section:first-child > article > ul
+    {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(2, 50%);
+        margin: 0 8% 2.5% 8%;
+    }
+
+    main > section:first-child > article > a > button
+    {
+        width: 30vw;
+    }
+}
+
+@media only screen and (max-width: 767px)
+{
+    
+}
+
 /*Frase de la empresa*/
 
 main > section:nth-child(2)
 {
-    background-image: url("img/logos/fondo-qubitexp.png");
+    background-image: url("/img/logos/fondo-qubitexp.png");
     margin: 3% 0 0 0;
 }
 
@@ -221,6 +339,14 @@ main > section:nth-child(2) > article > p
     color: #fff;
     font-weight: bold;
     text-align: center;
+}
+
+@media only screen and (max-width: 990px)
+{
+    main > section:nth-child(2) > article 
+    {
+        padding: 3.5% 8%;
+    }
 }
 
 /*Sobre QubiTeXp*/
@@ -246,8 +372,42 @@ main > section:nth-child(3) > article:nth-child(2) > span > h3
 {
     font-size: 1.563em;
     font-weight: bold;
-    margin: 5% 0;
-    color: #7d8588;
+    margin: 2.5% 0;
+}
+
+@media only screen and (max-width: 990px)
+{
+    main > section:nth-child(3) > article > p , main > section:nth-child(3) > article:nth-child(2)
+    {
+        margin: 0 8% 2.5% 8%;
+    }
+
+    main > section:nth-child(3) > article:nth-child(2)
+    {
+        grid-template-rows: 70% 30%;
+        grid-template-columns: none;
+    }
+
+    main > section:nth-child(3) > article:nth-child(2) > img
+    {
+        width: 100%;
+        height: 97.5%;
+    }
+
+    main > section:nth-child(3) > article:nth-child(2) > span
+    {
+        margin: 0 1%;
+    }
+
+    main > section:nth-child(3) > article:nth-child(2) > span > p
+    {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 767px)
+{
+    
 }
 
 /*Investigaciones*/
@@ -255,15 +415,20 @@ main > section:nth-child(3) > article:nth-child(2) > span > h3
 main > section:nth-child(4) 
 {
     display: grid;
-    grid-template-rows: 15% 75%;
+    grid-template-rows: 20% 80%;
     background-color: #F5F7FA;
-    margin: 2.5% 0;
+    margin-top: 2.5%;
 }
 
 main > section:nth-child(4) > article:nth-child(2) > ul
 {
     display: grid;
     grid-template-columns: repeat(4, 25%);
+}
+
+main > section:nth-child(4) > article:nth-child(2) > ul > p
+{
+    display: none;
 }
 
 main > section:nth-child(4) > article:nth-child(2) > ul > a:hover > li
@@ -273,7 +438,7 @@ main > section:nth-child(4) > article:nth-child(2) > ul > a:hover > li
 
 main > section:nth-child(4) > article:nth-child(2) > ul > a > li
 {
-    margin: 5% 12.5%;
+    margin: 2.5% 12.5%;
     background-color: #fff;
     width: 18.5vw;
 }
@@ -298,6 +463,38 @@ main > section:nth-child(4) > article:nth-child(2) > ul > a > li > img
 main > section:nth-child(4) > article:nth-child(2) > ul > a:hover > li > img
 {
     filter: brightness(50%);
+}
+
+@media only screen and (max-width: 990px)
+{
+    main > section:nth-child(4) > article:nth-child(2) > ul > a:nth-child(7),
+    main > section:nth-child(4) > article:nth-child(2) > ul > p:nth-child(8)
+    {
+        display: none;
+    }
+
+    main > section:nth-child(4) 
+    {
+        grid-template-rows: 5.5% 94.5%;
+    }
+
+    main > section:nth-child(4) > article:nth-child(2) > ul
+    {
+        grid-template-columns: 25% 75%;
+        grid-template-rows: repeat(3, 33.3333333333333%);
+        margin: 2.5% 8%;
+    }
+
+    main > section:nth-child(4) > article:nth-child(2) > ul > p
+    {
+        display: inline;
+    }
+
+    main > section:nth-child(4) > article:nth-child(2) > ul > a > li
+    {
+        margin: 2.5% 0;
+    }
+    
 }
 
 /*Footer*/
@@ -359,16 +556,21 @@ footer > section:first-child > article > ul > li
 
 footer > section:nth-child(2) > article
 {
+    display: none;
+}
+
+footer > section:nth-child(3) > article
+{
     display: grid;
     grid-template-columns: 70% 30%;
 }
 
-footer > section:nth-child(2)
+footer > section:nth-child(3)
 {
     background-color: #991a15;
 }
 
-footer > section:nth-child(2) > article > p 
+footer > section:nth-child(3) > article > p 
 {
     color: #fff;
     font-size: 0.85em;
@@ -376,22 +578,67 @@ footer > section:nth-child(2) > article > p
     transition: 0.8s;
 }
 
-footer > section:nth-child(2) > article > p > a
+footer > section:nth-child(3) > article > p > a
 {
     color: #fff;
     font-size: 1em;
     margin: 1.5% 5%;
 }
 
-footer > section:nth-child(2) > article > p > a:hover
+footer > section:nth-child(3) > article > p > a:hover
 {
     font-weight: bolder;
     transition: 0.3s;
 }
 
-footer > section:nth-child(2) > article > p:nth-child(2)
+footer > section:nth-child(3) > article > p:nth-child(2)
 {
     display: flex;
     justify-content: flex-end;
+}
+
+@media only screen and (max-width: 990px)
+{
+    footer
+    {
+        background-image: none;
+    }
+
+    footer > section:first-child
+    {
+        display: none;
+    }
+
+    footer > section:nth-child(2) > article
+    {
+        display: block;
+        padding: 2.5% 8%;
+    }
+
+    footer > section:nth-child(3) > article
+    {
+        grid-template-columns: none;
+    }
+
+    footer > section:nth-child(3) > article > p:nth-child(2)
+    {
+        display: none;
+    }
+
+    footer > section:nth-child(3)
+    {
+        background-color: #F5F7FA;
+    }
+
+    footer > section:nth-child(3) > article  
+    {
+        padding: 0 3.5%;
+    }
+
+    footer > section:nth-child(3) > article > p > a,
+    footer > section:nth-child(3) > article > p 
+    {
+        color: #000;
+    }
 }
 
