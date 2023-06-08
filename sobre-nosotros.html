@@ -15,11 +15,16 @@
 </head>
 <body>
     <header>
-        <section>
+        <section class="sticky">
             <article>
                 <a href="index.html"><img src="img/logos/qubitexp-logo-sin-fondo.png" alt=""></a>
             </article>
-            <nav>
+            <article class="responsive">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </article>
+            <nav class="nav-bar">
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="productos.html">Productos <img src="img/logos/flecha-negra-logo.png" alt=""> <img src="img/logos/flecha-roja-logo.png" alt=""></a>
@@ -43,6 +48,14 @@
             </nav>
         </section>
     </header>
+    <script>
+        responsive = document.querySelector(".responsive");
+        responsive.onclick = function() 
+        {
+            nav = document.querySelector(".nav-bar");
+            nav.classList.toggle("active");
+        }
+    </script>
     <main>
         <section>
             <article>
@@ -68,7 +81,7 @@
                 </ul>
                 <p>Nuestros clientes obtienen novedosos productos de salud, belleza, biomedicina, tecnología, viajes, hogar, entretenimiento, industria, medio ambiente, entre otros.  
                   Somos una empresa que le brinda servicios en la consolidación de sus ideas. Asesoramos desde la conformación de los recursos humanos hasta la implementación de equipos y técnicas para su empresa.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit delectus laboriosam soluta alias harum, quidem consequatur aliquam blanditiis laudantium maxime aliquid facilis tempora praesentium iure ut a, earum quod provident officia. Fuga est eum animi, reprehenderit dignissimos voluptate dicta ex! Maiores beatae, aut cupiditate suscipit similique aspernatur molestiae? Vero facere accusamus autem tempore ratione! Corporis non provident amet delectus error deleniti debitis? Tenetur, nesciunt magnam. Nulla saepe natus eius ullam. Laudantium aliquid consequatur, nam nemo aliquam ipsa voluptatum magni quidem ipsam doloremque, numquam quam magnam! Fuga nulla maxime excepturi nihil alias animi dignissimos amet, itaque corporis quo sequi voluptas voluptatum!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit delectus laboriosam soluta alias harum, quidem consequatur aliquam blanditiis laudantium maxime aliquid facilis tempora praesentium iure ut a, earum quod provident officia. Fuga est eum animi, reprehenderit dignissimos voluptate dicta ex! Maiores beatae, aut cupiditate suscipit similique aspernatur molestiae
                 </p>
             </article>
         </section>
@@ -154,6 +167,11 @@
                     <li>Dirección: <a href="https://www.google.com/maps/place/Edificio+Avante/@4.725932,-74.0345964,17z/data=!3m1!4b1!4m6!3m5!1s0x8e3f856070c3be93:0x2ec47760552c64eb!8m2!3d4.7259267!4d-74.0320215!16s%2Fg%2F11c5zx9ldp?hl=es&entry=ttu" target="_blank">Ak. 9 #147-46</a></li>
                     <li>Bogotá, Colombia</li>
                 </ul>
+            </article>
+        </section>
+        <section>
+            <article>
+                <img src="img/logos/qubitexp-logo-fondo.png" alt="">
             </article>
         </section>
         <section>

@@ -16,16 +16,20 @@ p
 
 /*header*/
 
+header > section > article.responsive
+{
+    display: none;
+}
+
 header > section
 {
     display: grid;
     grid-template-columns: 25% 75%;
-    margin: 0 7.9%;
+    margin: 0 3%;
 }
 
 header > section > article > a > img
 {
-    height: auto;
     width: 85%;
     display: flex;
     align-items: center;
@@ -79,7 +83,7 @@ header > section > nav > ul > li:hover > ul
 {
     display: block;
     position: absolute;
-    top: 5.6vw;
+    top: 6vw;
     background-color: #fff;
 }
 
@@ -120,6 +124,97 @@ header > section > nav > ul > li:hover > a > img:nth-child(2)
     display: inline;
 }
 
+@media only screen and (max-width: 990px)
+{
+    header > section > nav > ul > li > a > img:first-child
+    {
+        display: none;
+    }
+    
+    header > section > nav > ul > li > a > img:nth-child(2),
+    header > section > nav > ul > li:hover > a > img:nth-child(2)
+    {
+        display: none;
+    }
+
+    header > section > nav > ul > li:hover > ul 
+    {
+        display: none;
+    }
+
+    header > section
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 8%;
+    }
+
+    header > section > article > a > img
+    {
+        width: 70%;
+    }
+
+    header > section > article.responsive
+    {
+        display: block;
+        cursor: pointer;
+    }
+
+    header > section > article.responsive > div.line
+    {
+        width: 30px;
+        height: 3px;
+        background: #991a15;
+        margin: 6px 0;
+    }
+
+    header > section > nav
+    {
+        height: 0;
+        position: absolute;
+        top: 90px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: #fff;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+
+    header > section > nav.active
+    {
+        height: 622px;
+        transition: 0.5s;
+    }
+
+    header > section > nav.active > ul
+    {
+        opacity: 1;
+        transition: 0.5s;
+    }
+
+    header > section > nav > ul
+    {
+        grid-template-columns: none;
+        display: block;
+        width: fit-content;
+        margin: 5% auto 0 auto;
+        opacity: 0;
+        transition: 0.5s;
+    }
+
+    header > section > nav > ul > li > a
+    {
+        margin-bottom: 15%;
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 767px)
+{
+    
+}
 /*Body*/
 
 main > section:first-child > article
@@ -156,52 +251,105 @@ main > section:nth-child(2) > article > div > div > img
 
 main > section:nth-child(2) > article > div:first-child
 {
+    display: none;
+}
+
+main > section:nth-child(2) > article > div:nth-child(2)
+{
     margin-right: 10%;
 }
 
-main > section:nth-child(2) > article > div:nth-child(2) > h2
+main > section:nth-child(2) > article > div:nth-child(3) > h2
 {
     font-weight: 500;
     font-size: 1.85em;
     margin-bottom: 1.5%;
 }
 
-main > section:nth-child(2) > article > div:nth-child(2) > h3
+main > section:nth-child(2) > article > div:nth-child(3) > h3
 {
     margin: 2% 0;
 }
 
-main > section:nth-child(2) > article > div:nth-child(2) > p,
-main > section:nth-child(2) > article > div:nth-child(2) > ul > li > p
+main > section:nth-child(2) > article > div:nth-child(3) > p,
+main > section:nth-child(2) > article > div:nth-child(3) > ul > li > p
 {
     font-size: 1em;
     line-height: 25px;
-
 }
 
-main > section:nth-child(2) > article > div:nth-child(2) > p:nth-child(6)
+main > section:nth-child(2) > article > div:nth-child(3) > p:nth-child(6)
 {
     display: flex;
     align-items: center;
     margin-top: 2.5%;
 }
 
-main > section:nth-child(2) > article > div:nth-child(2) > p:nth-child(6) > img
+main > section:nth-child(2) > article > div:nth-child(3) > p:nth-child(6) > img
 {
     width: 20px;
 }
 
-main > section:nth-child(2) > article > div:nth-child(2) > p:nth-child(6) > a
+main > section:nth-child(2) > article > div:nth-child(3) > p:nth-child(6) > a
 {
     margin-left: 1%;
     color: #000;
     transition: 1s;
 }
 
-main > section:nth-child(2) > article > div:nth-child(2) > p:nth-child(6) > a:hover
+main > section:nth-child(2) > article > div:nth-child(3) > p:nth-child(6) > a:hover
 {
     color: #991a15;
     transition: 0.5s;
+}
+
+@media only screen and (max-width: 990px)
+{
+    main > section:nth-child(2) > article > div:first-child
+    {
+        display: grid;
+    }
+
+    main > section:nth-child(2) > article > div:first-child > img
+    {
+        width: 90%;
+        margin-right: 10%;
+    }
+
+    main > section:nth-child(2) > article > div:nth-child(2)
+    {
+        display: none;
+    }
+
+    main > section:nth-child(2) > article
+    {
+        grid-template-columns: none;
+        grid-template-rows: 55% 45%;
+        width: 93.4%;
+    }
+
+    main > section:nth-child(2) > article > div:nth-child(3) > h2
+    {
+        margin-top: 8%;
+    }
+
+    main > section:nth-child(2) > article > div:nth-child(3)
+    {
+        margin-right: 10%;
+    }
+
+    main > section:nth-child(2) > article > div:nth-child(4) > img
+    {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 900px)
+{
+    main > section:nth-child(2) > article > div:nth-child(3) > h2
+    {
+        margin-top: 5%;
+    }
 }
 
 /* Slideshow */
@@ -256,13 +404,13 @@ main > section:nth-child(2) > article > div:nth-child(2) > p:nth-child(6) > a:ho
 }
 
 
-main > section:nth-child(2) > article > div:nth-child(3)
+main > section:nth-child(2) > article > div:nth-child(4)
 {
   display: grid;
   grid-template-columns: repeat(3, 25%);
 }
 
-main > section:nth-child(2) > article > div:nth-child(3) > img
+main > section:nth-child(2) > article > div:nth-child(4) > img
 {
   cursor: pointer;
   width: 90%;
@@ -339,6 +487,14 @@ main > section:nth-child(4)
     margin: 0 7.9%;
 }
 
+@media only screen and (max-width: 990px)
+{
+    main > section:nth-child(4) 
+    {
+        grid-template-columns: 100%;
+    }
+}
+
 /*Producto*/
 
 main > section:nth-child(4) > section:nth-child(2) > article
@@ -360,6 +516,14 @@ main > section:nth-child(4) > section:nth-child(2) > article > div > img
 {
     width: 100%;
     margin-bottom: 2.5%;
+}
+
+@media only screen and (max-width: 990px)
+{
+    main > section:nth-child(4) > section:nth-child(2) > article
+    {
+        display: none;
+    }
 }
 
 
@@ -557,12 +721,12 @@ footer > section:first-child
 {
     display: grid;
     grid-template-columns: repeat(4, 25%);
-    margin: 0 7.9%;
+    margin: 0 8%;
 }
 
 footer > section:first-child > article
 {
-    margin: 5% 0%;
+    margin: 5% 2%;
 }
 
 footer > section:first-child > article > h4 > a
@@ -604,41 +768,92 @@ footer > section:first-child > article > ul > li
     font-size: 0.938em;
 }
 
-footer > section:nth-child(2n) > article
+footer > section:nth-child(2) > article
+{
+    display: none;
+}
+
+footer > section:nth-child(3) > article
 {
     display: grid;
     grid-template-columns: 70% 30%;
-    padding: 1% 7.5%;
+    padding: 0 5%;
 }
 
-footer > section:nth-child(2n)
+footer > section:nth-child(3)
 {
     background-color: #991a15;
 }
 
-footer > section:nth-child(2n) > article > p 
+footer > section:nth-child(3) > article > p 
 {
     color: #fff;
     font-size: 0.85em;
+    margin: 1.5% 5%;
     transition: 0.8s;
 }
 
-footer > section:nth-child(2n) > article > p > a
+footer > section:nth-child(3) > article > p > a
 {
     color: #fff;
     font-size: 1em;
-    margin: 0 10px;
+    margin: 1.5% 5%;
 }
 
-footer > section:nth-child(2n) > article > p > a:hover
+footer > section:nth-child(3) > article > p > a:hover
 {
     font-weight: bolder;
     transition: 0.3s;
 }
 
-footer > section:nth-child(2n) > article > p:nth-child(2n)
+footer > section:nth-child(3) > article > p:nth-child(2)
 {
     display: flex;
     justify-content: flex-end;
+}
+
+@media only screen and (max-width: 990px)
+{
+    footer
+    {
+        background-image: none;
+    }
+
+    footer > section:first-child
+    {
+        display: none;
+    }
+
+    footer > section:nth-child(2) > article
+    {
+        display: block;
+        padding: 2.5% 8%;
+    }
+
+    footer > section:nth-child(3) > article
+    {
+        grid-template-columns: none;
+    }
+
+    footer > section:nth-child(3) > article > p:nth-child(2)
+    {
+        display: none;
+    }
+
+    footer > section:nth-child(3)
+    {
+        background-color: #F5F7FA;
+    }
+
+    footer > section:nth-child(3) > article  
+    {
+        padding: 0 3.5%;
+    }
+
+    footer > section:nth-child(3) > article > p > a,
+    footer > section:nth-child(3) > article > p 
+    {
+        color: #000;
+    }
 }
 
